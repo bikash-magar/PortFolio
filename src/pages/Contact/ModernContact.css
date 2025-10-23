@@ -1,0 +1,481 @@
+/* Modern Contact Page Styling - Terminal Aesthetic */
+.modern-contact {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding-top: 80px;
+  font-family: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Contact Hero - Terminal Window Style */
+.contact-hero {
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 12px;
+  background: 
+    radial-gradient(circle at 6px center, #ff5f57 4px, transparent 4px),
+    radial-gradient(circle at 22px center, #ffbd2e 4px, transparent 4px),
+    radial-gradient(circle at 38px center, #28ca42 4px, transparent 4px);
+  z-index: 3;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+/* Contact Content - Terminal Window Style */
+.contact-content {
+  background: var(--bg-card);
+  margin: 40px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  padding: 40px;
+  position: relative;
+}
+
+/* Terminal Window Controls for Contact Content */
+.contact-content::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 60px;
+  height: 12px;
+  background: 
+    radial-gradient(circle at 6px center, #ff5f57 4px, transparent 4px),
+    radial-gradient(circle at 22px center, #ffbd2e 4px, transparent 4px),
+    radial-gradient(circle at 38px center, #28ca42 4px, transparent 4px);
+  z-index: 3;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Contact Information */
+.contact-info {
+  color: var(--text-primary);
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.contact-info h2 {
+  color: var(--text-accent);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.contact-info > p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.contact-details {
+  margin-bottom: 50px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: var(--bg-secondary);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 5px 20px var(--shadow-color);
+  transition: all 0.3s ease;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.contact-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(88, 166, 255, 0.15);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-primary);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-primary);
+}
+
+.contact-text h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-accent);
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.contact-text p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+/* Social Links */
+.social-links h4 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-accent);
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.social-link:hover {
+  background: var(--text-accent);
+  color: var(--bg-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(88, 166, 255, 0.3);
+}
+
+/* Contact Form - Terminal Style */
+.contact-form-container {
+  background: var(--bg-card);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 2px 10px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  position: relative;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+/* Terminal Window Controls for Contact Form */
+.contact-form-container::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 60px;
+  height: 12px;
+  background: 
+    radial-gradient(circle at 6px center, #ff5f57 4px, transparent 4px),
+    radial-gradient(circle at 22px center, #ffbd2e 4px, transparent 4px),
+    radial-gradient(circle at 38px center, #28ca42 4px, transparent 4px);
+  z-index: 3;
+}
+
+.contact-form h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-accent);
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-accent);
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--text-accent);
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.1);
+}
+
+.form-group input:disabled,
+.form-group textarea:disabled {
+  background: var(--bg-secondary);
+  cursor: not-allowed;
+  color: var(--text-muted);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Button - Terminal Style */
+.submit-btn {
+  width: 100%;
+  background: var(--gradient-primary);
+  color: var(--bg-primary);
+  border: none;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(88, 166, 255, 0.3);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-btn.submitting {
+  background: var(--text-muted);
+}
+
+/* Spinner */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(13, 17, 23, 0.3);
+  border-top: 2px solid var(--bg-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Success Message - Terminal Style */
+.success-message {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border-color);
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+/* Contact Stats - Terminal Style */
+.contact-stats {
+  background: var(--bg-secondary);
+  padding: 60px 20px;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  text-align: center;
+  color: var(--text-primary);
+  padding: 30px 20px;
+  background: var(--bg-card);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 10px var(--shadow-color);
+  transition: all 0.3s ease;
+  position: relative;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+/* Terminal Window Controls for Stat Items */
+.stat-item::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 8px;
+  background: 
+    radial-gradient(circle at 4px center, #ff5f57 3px, transparent 3px),
+    radial-gradient(circle at 16px center, #ffbd2e 3px, transparent 3px),
+    radial-gradient(circle at 28px center, #28ca42 3px, transparent 3px);
+  z-index: 3;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(88, 166, 255, 0.2);
+}
+
+.stat-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+  color: var(--text-accent);
+}
+
+.stat-item h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.stat-item p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .contact-form-container {
+    padding: 30px 20px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero {
+    padding: 60px 15px;
+  }
+  
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-content {
+    padding: 40px 15px;
+  }
+  
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-link {
+    width: 200px;
+    justify-content: center;
+  }
+}

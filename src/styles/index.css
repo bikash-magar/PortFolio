@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* CSS Custom Properties for Light/Dark Mode */
+:root {
+  /* Light Mode Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --bg-card: #ffffff;
+  --bg-navbar: rgba(255, 255, 255, 0.95);
+  --bg-dropdown: #ffffff;
+
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #888888;
+  --text-accent: #667eea;
+
+  --border-color: #e9ecef;
+  --border-light: #f1f1f1;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --shadow-hover: rgba(0, 0, 0, 0.1);
+
+  --gradient-primary: linear-gradient(45deg, #667eea, #764ba2);
+  --gradient-secondary: linear-gradient(135deg, #667eea, #764ba2);
+
+  --scrollbar-track: #f1f1f1;
+  --scrollbar-thumb: linear-gradient(45deg, #667eea, #764ba2);
+
+  --selection-bg: rgba(102, 126, 234, 0.3);
+  --focus-outline: #667eea;
+}
+
+/* Dark Mode Colors - Kali Linux Inspired */
+[data-theme="dark"] {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #21262d;
+  --bg-card: #161b22;
+  --bg-navbar: rgba(13, 17, 23, 0.95);
+  --bg-dropdown: #161b22;
+
+  --text-primary: #f8fffd;
+    --text-secondary: #e0e6f0;
+  --text-muted: #eef5ff;
+  --text-accent: #58a6ff;
+
+  --border-color: #30363d;
+  --border-light: #21262d;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --shadow-hover: rgba(0, 0, 0, 0.7);
+
+  --gradient-primary: linear-gradient(45deg, #58a6ff, #79c0ff);
+  --gradient-secondary: linear-gradient(135deg, #58a6ff, #79c0ff);
+
+  --scrollbar-track: #161b22;
+  --scrollbar-thumb: linear-gradient(45deg, #58a6ff, #79c0ff);
+
+  --selection-bg: rgba(88, 166, 255, 0.3);
+  --focus-outline: #58a6ff;
+}
+
+body{
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+/* Subtle terminal scanlines effect for dark mode */
+[data-theme="dark"] body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(
+            rgba(88, 166, 255, 0.03) 1px,
+            transparent 1px
+        );
+    background-size: 100% 2px;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.3;
+}

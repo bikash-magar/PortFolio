@@ -1,0 +1,25 @@
+.tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px 0;
+}
+
+.tool-box {
+    width: 140px;
+    height: 70px;
+    background: #ddd;
+    border-radius: 35px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.tool-box.active {
+    border-color: #0074d9; /* blue border for active/selected */
+}
