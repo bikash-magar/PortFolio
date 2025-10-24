@@ -105,7 +105,7 @@ function ModernAbout() {
           <div className="hero-content">
             <div className="profile-section">
               <div className="profile-image-large">
-                <img src="./public/profile-min.jpg" alt={personal?.name || 'Bikash Magar'} />
+                <img src="/myProfile.jpg" alt={personal?.name || 'Bikash Magar'} />
               </div>
               <div className="profile-info">
                 <h1 className="profile-name">{personal?.name || 'Bikash Magar'}</h1>
